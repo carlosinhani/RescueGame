@@ -12,6 +12,11 @@ h1 {
 body {
   background-image: url(/imgs/fundo.jpg);
 }
+h2 {
+    font-family: Titulo;
+    font-size: 20px;
+    color: #fff;
+}
 
 .container {
     width: 950px;
@@ -20,6 +25,45 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+.anima1 {
+    background-image: url(/imgs/helicoptero.png);
+    animation:play .5s steps(2) infinite;
+
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite;
+}
+.anima2 {
+    background-image: url(/imgs/inimigo1.png);
+    animation:play .5s steps(2) infinite;
+
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite;
+}
+
+.anima3 {
+    background-image: url(/imgs/amigo.png);
+    animation:play2 .9s steps(12) infinite;
+
+    -webkit-animation: play .9s steps(12) infinite;
+    -moz-animation: play .9s steps(12) infinite;
+    -ms-animation: play .9s steps(12) infinite;
+    -o-animation: play .9s steps(12) infinite;
+}
+.anima4 {
+    width: 44px;
+    height: 51px;
+    background-image: url(/imgs/amigo_morte.png);
+    animation:play3 .5s steps(7) infinite;
+    -webkit-animation: play3 .5s steps(7) infinite;
+    -moz-animation: play3 .5s steps(7) infinite;
+    -ms-animation: play3 .5s steps(7) infinite;
+    -o-animation: play3 .5s steps(7) infinite;
+}
+
 
 #fundoGame {
     width: 950px;
@@ -27,8 +71,6 @@ body {
     background-image: url(/imgs/fundo_game.jpg);
     border-color: #fff;
     border-style: solid;
-    
-    
 }
 
 #jogador {
@@ -77,15 +119,45 @@ body {
     text-align: center;
     padding: 10px;
 }
+#disparo {
+    width: 50px;
+    height: 8px;
+    position: absolute;
+    background-image: url(/imgs/disparo.png);
+}
 
-.anima1 {
-    background-image: url(/imgs/helicoptero.png);
-    animation:play .5s steps(2) infinite;
+#explosao1 {
+    width: 15px;
+    height: 87px;
+    position: absolute;
+}
 
-    -webkit-animation: play .5s steps(2) infinite;
-    -moz-animation: play .5s steps(2) infinite;
-    -ms-animation: play .5s steps(2) infinite;
-    -o-animation: play .5s steps(2) infinite;
+#explosao2 {
+    width: 15px;
+    height: 87px;
+    position: absolute;
+}
+
+#explosao3 {
+    width: 44px;
+    height: 51px;
+    position: absolute;
+}
+
+#placar {
+    width: 450px;
+    height: 50px;
+    position: absolute;
+    left: 5px;
+    top: 590px;
+}
+
+#energia {
+    width: 140px;
+    height: 38px;
+    position: absolute;
+    left: 750px;
+    top: 7px;
 }
 
 @keyframes play {
@@ -113,26 +185,6 @@ body {
     to {background-position: -512px;}
 }
 
-.anima2 {
-    background-image: url(/imgs/inimigo1.png);
-    animation:play .5s steps(2) infinite;
-
-    -webkit-animation: play .5s steps(2) infinite;
-    -moz-animation: play .5s steps(2) infinite;
-    -ms-animation: play .5s steps(2) infinite;
-    -o-animation: play .5s steps(2) infinite;
-}
-
-.anima3 {
-    background-image: url(/imgs/amigo.png);
-    animation:play2 .9s steps(12) infinite;
-
-    -webkit-animation: play .9s steps(12) infinite;
-    -moz-animation: play .9s steps(12) infinite;
-    -ms-animation: play .9s steps(12) infinite;
-    -o-animation: play .9s steps(12) infinite;
-}
-
 @keyframes play2 {
     from {background-position: 0px;}
     to {background-position: -528px;}
@@ -157,22 +209,32 @@ body {
     from {background-position: 0px;}
     to {background-position: -528px;}
 }
-
-#disparo {
-    width: 50px;
-    height: 8px;
-    position: absolute;
-    background-image: url(/imgs/disparo.png);
+@keyframes play3 {
+    from {background-position: 0px;}
+    to {background-position: -308px;}
 }
 
-#explosao1 {
-    width: 15px;
-    height: 87px;
-    position: absolute;
+@-webkit-keyframes play3 {
+    from {background-position: 0px;}
+    to {background-position: -308px;}
 }
 
-#explosao2 {
-    width: 15px;
-    height: 87px;
-    position: absolute;
+@-moz-keyframes play3 {
+    from {background-position: 0px;}
+    to {background-position: -308px;}
 }
+
+@-ms-keyframes play3 {
+    from {background-position: 0px;}
+    to {background-position: -308px;}
+}
+
+@-o-keyframes play3 {
+    from {background-position: 0px;}
+    to {background-position: -308px;}
+}
+
+
+
+
+
